@@ -4,18 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Vexon — Design, sites e web apps para marcas modernas</title>
+  <title>Vexon - Tecnologia, visual e experi&ecirc;ncia</title>
 
   <meta
     name="description"
-    content="A Vexon é um estúdio colaborativo brasileiro de design digital, sites e web apps para marcas modernas."
+    content="A Vexon cria sites, landing pages, interfaces, dashboards e experi&ecirc;ncias digitais com dire&ccedil;&atilde;o visual, estrat&eacute;gia e t&eacute;cnica."
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
   <link
-    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
 
@@ -24,372 +23,294 @@
 
 <body>
   <header class="site-header" id="siteHeader">
-    <a href="#inicio" class="brand">
-      <span class="brand-symbol"></span>
+    <a href="#inicio" class="brand" aria-label="Vexon - inicio">
+      <span class="brand-symbol" aria-hidden="true"></span>
       <span class="brand-name">Vexon</span>
     </a>
 
-    <nav class="desktop-nav">
+    <nav class="desktop-nav" aria-label="Navega&ccedil;&atilde;o principal">
       <a href="#criamos">O que criamos</a>
-      <a href="#diferenca">Diferença</a>
+      <a href="#diferenca">Diferen&ccedil;a</a>
       <a href="#processo">Processo</a>
       <a href="#projetos">Projetos</a>
       <a href="#contato">Contato</a>
     </nav>
 
-    <a class="header-cta" href="#contato">Começar projeto</a>
+    <a class="header-cta" href="#contato">Come&ccedil;ar projeto</a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
       <span></span>
       <span></span>
     </button>
   </header>
 
-  <nav class="mobile-nav" id="mobileNav">
+  <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
     <a href="#criamos">O que criamos</a>
-    <a href="#diferenca">Diferença</a>
+    <a href="#diferenca">Diferen&ccedil;a</a>
     <a href="#processo">Processo</a>
     <a href="#projetos">Projetos</a>
     <a href="#contato">Contato</a>
   </nav>
 
-  <main class="site-main" id="pageTrack">
-    <section class="hero section panel" id="inicio">
-      <div class="hero-content reveal">
-        <p class="eyebrow">Estúdio colaborativo brasileiro</p>
+  <main class="site-main">
+    <section class="hero section" id="inicio">
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Coletivo criativo digital - Brasil</p>
+          <h1>Tecnologia, visual e experi&ecirc;ncia para marcas que querem presen&ccedil;a.</h1>
+          <p class="hero-text">
+            A Vexon cria sites, interfaces, sistemas web e experi&ecirc;ncias digitais com est&eacute;tica autoral,
+            pensamento estrat&eacute;gico e execu&ccedil;&atilde;o t&eacute;cnica.
+          </p>
 
-        <h1>Design, sites e web apps para marcas modernas.</h1>
-
-        <p class="hero-text">
-          Criamos presença digital com estética, técnica e personalidade —
-          para marcas que querem parecer vivas, próprias e impossíveis de confundir.
-        </p>
-
-        <div class="hero-actions">
-          <a
-            class="button button-primary"
-            href="https://wa.me/5500000000000?text=Oi%2C%20quero%20come%C3%A7ar%20um%20projeto%20com%20a%20Vexon."
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Começar um projeto
-          </a>
-
-          <a class="button button-secondary" href="#criamos">
-            Ver o que criamos
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-meta reveal" aria-label="Dados do estúdio">
-        <span>São Paulo / Brasil</span>
-        <span>Design + front-end</span>
-        <span>Sites sem cara de template</span>
-      </div>
-
-      <div class="hero-card reveal">
-        <div class="poster brief-card">
-          <div class="poster-top">
-            <span>VX-01</span>
-            <span id="briefCode">SITE / DIGITAL</span>
-          </div>
-
-          <div class="poster-symbol">
-            <span class="line line-one"></span>
-            <span class="line line-two"></span>
-            <span class="top-line"></span>
-          </div>
-
-          <div class="brief-content" aria-live="polite">
-            <p class="brief-kicker">Que tipo de presença sua marca precisa agora?</p>
-            <h2 id="briefTitle">Site institucional</h2>
-            <p id="briefText">
-              Ideal para apresentar a marca com autoridade, estética forte e uma estrutura clara de navegação.
-            </p>
-          </div>
-
-          <div class="brief-options" role="group" aria-label="Tipo de projeto">
-            <button class="brief-option is-active" type="button" data-brief="site">Site</button>
-            <button class="brief-option" type="button" data-brief="landing">Landing</button>
-            <button class="brief-option" type="button" data-brief="webapp">Web app</button>
-            <button class="brief-option" type="button" data-brief="interface">Interface</button>
-          </div>
-
-          <div class="poster-bottom brief-action">
+          <div class="hero-actions">
             <a
-              id="briefWhatsapp"
-              href="https://wa.me/5500000000000?text=Oi%2C%20quero%20conversar%20sobre%20um%20projeto%20de%20Site%20institucional%20com%20a%20Vexon."
+              class="button button-primary"
+              href="https://wa.me/5500000000000?text=Oi%2C%20quero%20come%C3%A7ar%20um%20projeto%20com%20a%20Vexon."
               target="_blank"
               rel="noopener noreferrer"
             >
-              Conversar sobre esse projeto
+              Come&ccedil;ar projeto
             </a>
+            <a class="button button-secondary" href="#manifesto">Ver dire&ccedil;&atilde;o visual</a>
           </div>
         </div>
+
+        <aside class="hero-studio reveal" aria-label="Dire&ccedil;&atilde;o visual Vexon">
+          <div class="studio-poster" id="heroPoster">
+            <div class="poster-head">
+              <span>VX / 2026</span>
+              <span>Digital craft</span>
+            </div>
+            <div class="vexon-mark" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <i></i>
+            </div>
+            <div class="poster-tags" aria-label="Especialidades">
+              <span>Sites</span>
+              <span>Web apps</span>
+              <span>Dashboards</span>
+              <span>UI</span>
+              <span>Experi&ecirc;ncia</span>
+              <span>Dire&ccedil;&atilde;o visual</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero-strip reveal" aria-label="Resumo da Vexon">
+        <span>Design digital</span>
+        <span>Front-end</span>
+        <span>Sistemas visuais</span>
+        <span>Marcas em movimento</span>
       </div>
     </section>
 
-    <section class="marquee panel" aria-label="Especialidades da Vexon">
-      <div class="marquee-track">
-        <span>design digital</span>
-        <span>sites</span>
-        <span>landing pages</span>
-        <span>web apps</span>
-        <span>interfaces</span>
-        <span>marcas modernas</span>
-        <span>design digital</span>
-        <span>sites</span>
-        <span>landing pages</span>
-        <span>web apps</span>
-        <span>interfaces</span>
-        <span>marcas modernas</span>
-      </div>
-      <p class="scroll-hint">Explore a Vexon</p>
-    </section>
-
-    <section class="section intro-section panel" id="intro">
-      <div class="section-label reveal">
-        <span>01</span>
-        <p>Presença digital com direção</p>
-      </div>
-
-      <div class="intro-copy reveal">
-        <h2>
-          A Vexon nasce para marcas que querem um digital com mais presença,
-          mais cuidado visual e menos cara de template.
-        </h2>
-
+    <section class="manifesto section" id="manifesto">
+      <div class="section-index reveal">01 / Presen&ccedil;a</div>
+      <div class="manifesto-copy reveal">
+        <h2>N&atilde;o somos s&oacute; sobre estar online. Somos sobre construir presen&ccedil;a.</h2>
         <p>
-          Somos um estúdio colaborativo que aproxima design, desenvolvimento e
-          estratégia visual para criar sites, interfaces e experiências digitais
-          que funcionam bem — e também deixam marca.
+          A Vexon une design, tecnologia e dire&ccedil;&atilde;o visual para criar produtos digitais com forma,
+          fun&ccedil;&atilde;o e inten&ccedil;&atilde;o. Menos template. Mais clareza, ritmo e identidade.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="criamos">
+      <div class="section-heading reveal">
+        <p class="eyebrow">O que criamos</p>
+        <h2>Do site institucional ao sistema que organiza uma opera&ccedil;&atilde;o.</h2>
+        <p>
+          Trabalhamos em frentes digitais para marcas e neg&oacute;cios que precisam comunicar melhor,
+          vender com mais presen&ccedil;a e transformar interface em experi&ecirc;ncia.
         </p>
       </div>
 
-      <div class="studio-notes reveal" aria-label="Princípios da Vexon">
-        <span>craft digital</span>
-        <span>clareza comercial</span>
-        <span>identidade própria</span>
-      </div>
-    </section>
-
-    <section class="section panel" id="criamos">
-      <div class="section-heading reveal">
-        <p class="eyebrow">O que criamos</p>
-        <h2>Do primeiro impacto ao produto publicado.</h2>
-        <p class="section-note">Arraste os cards para descobrir formatos de presença digital que podem encaixar no momento da sua marca.</p>
-      </div>
-
-      <div class="services-grid horizontal-rail" aria-label="Serviços da Vexon">
-        <article class="service-card reveal">
+      <div class="capabilities-grid">
+        <article class="capability-card reveal">
           <span>01</span>
           <h3>Sites institucionais</h3>
-          <p>Presença digital para marcas que precisam comunicar valor com clareza, estética e estrutura.</p>
+          <p>Presen&ccedil;a digital para apresentar marca, servi&ccedil;os e narrativa com autoridade.</p>
         </article>
-
-        <article class="service-card reveal">
+        <article class="capability-card reveal">
           <span>02</span>
           <h3>Landing pages</h3>
-          <p>Páginas comerciais com narrativa visual, foco em conversão e personalidade de marca.</p>
+          <p>P&aacute;ginas de campanha, lan&ccedil;amento e convers&atilde;o com visual memor&aacute;vel.</p>
         </article>
-
-        <article class="service-card reveal">
+        <article class="capability-card reveal">
           <span>03</span>
           <h3>Web apps</h3>
-          <p>Interfaces interativas para produtos digitais, ferramentas internas, MVPs e experiências online.</p>
+          <p>Ferramentas, MVPs e experi&ecirc;ncias interativas para uso real.</p>
         </article>
-
-        <article class="service-card reveal">
+        <article class="capability-card reveal">
           <span>04</span>
-          <h3>Interfaces digitais</h3>
-          <p>Telas, fluxos e sistemas visuais pensados para uso real, com estética consistente.</p>
+          <h3>Dashboards</h3>
+          <p>Interfaces de dados e opera&ccedil;&atilde;o com leitura r&aacute;pida e estrutura clara.</p>
         </article>
-
-        <article class="service-card reveal">
+        <article class="capability-card reveal">
           <span>05</span>
-          <h3>Experimentos visuais</h3>
-          <p>Estudos, protótipos e conceitos digitais para marcas que querem explorar linguagem própria.</p>
+          <h3>Sistemas visuais</h3>
+          <p>Componentes, telas e diretrizes para marcas digitais consistentes.</p>
         </article>
-
-        <article class="service-card reveal">
+        <article class="capability-card reveal">
           <span>06</span>
-          <h3>Sistemas web leves</h3>
-          <p>Soluções sob medida quando a marca precisa de algo mais funcional que uma página estática.</p>
+          <h3>IA e automa&ccedil;&atilde;o</h3>
+          <p>Integra&ccedil;&otilde;es futuras para processos, interfaces inteligentes e opera&ccedil;&otilde;es conectadas.</p>
         </article>
       </div>
     </section>
 
-    <section class="section difference-section panel" id="diferenca">
-      <div class="difference-title reveal">
-        <p class="eyebrow">Diferença Vexon</p>
-        <h2>Olhar de estúdio. Execução de produto digital.</h2>
+    <section class="section difference-section" id="diferenca">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Diferen&ccedil;a Vexon</p>
+        <h2>Interface limpa, mas nunca sem personalidade.</h2>
       </div>
 
       <div class="difference-list">
         <article class="difference-item reveal">
-          <span>01</span>
-          <div>
-            <h3>Design com personalidade</h3>
-            <p>Nada de visual genérico. Cada projeto busca uma presença própria, alinhada à marca e ao público.</p>
-          </div>
+          <span>Design com personalidade</span>
+          <p>Dire&ccedil;&atilde;o visual pr&oacute;pria, tipografia forte e composi&ccedil;&atilde;o pensada para a marca n&atilde;o desaparecer no meio do comum.</p>
         </article>
-
         <article class="difference-item reveal">
-          <span>02</span>
-          <div>
-            <h3>Front-end bem cuidado</h3>
-            <p>Código organizado, responsivo e preparado para evoluir sem virar uma peça frágil.</p>
-          </div>
+          <span>Estrutura para convers&atilde;o</span>
+          <p>Hierarquia, fluxo e chamadas claras para transformar presen&ccedil;a em a&ccedil;&atilde;o.</p>
         </article>
-
         <article class="difference-item reveal">
-          <span>03</span>
-          <div>
-            <h3>Colaboração próxima</h3>
-            <p>A construção acontece junto com a marca, com escuta, direção visual e decisões claras.</p>
-          </div>
+          <span>Responsividade real</span>
+          <p>Layout planejado para desktop, notebook, tablet e celular sem remendos.</p>
         </article>
-
         <article class="difference-item reveal">
-          <span>04</span>
-          <div>
-            <h3>Experiência antes do enfeite</h3>
-            <p>O site precisa ser bonito, mas também rápido, legível, acessível e fácil de usar.</p>
-          </div>
+          <span>T&eacute;cnica organizada</span>
+          <p>C&oacute;digo leve, sem depend&ecirc;ncia desnecess&aacute;ria, preparado para crescer com o projeto.</p>
         </article>
       </div>
     </section>
 
-    <section class="section panel" id="processo">
+    <section class="section process-section" id="processo">
       <div class="section-heading reveal">
         <p class="eyebrow">Processo</p>
-        <h2>Uma construção visual com método.</h2>
-        <p class="section-note">Um caminho simples de acompanhar, do primeiro briefing ao site no ar.</p>
+        <h2>Um caminho objetivo entre escuta, dire&ccedil;&atilde;o e entrega.</h2>
       </div>
 
-      <div class="process-grid horizontal-rail" aria-label="Etapas do processo">
-        <article class="process-card reveal">
+      <div class="process-timeline" aria-label="Etapas do processo">
+        <article class="process-step reveal">
           <span>01</span>
-          <h3>Escuta</h3>
-          <p>Entendemos a marca, o momento, o público e o objetivo do projeto.</p>
+          <h3>Entendimento</h3>
+          <p>Objetivos, p&uacute;blico, contexto da marca e prioridade do projeto.</p>
         </article>
-
-        <article class="process-card reveal">
+        <article class="process-step reveal">
           <span>02</span>
-          <h3>Direção</h3>
-          <p>Definimos referências, linguagem visual, estrutura e intenção da experiência.</p>
+          <h3>Dire&ccedil;&atilde;o visual</h3>
+          <p>Refer&ecirc;ncias, atmosfera, linguagem, grid e sistema de componentes.</p>
         </article>
-
-        <article class="process-card reveal">
+        <article class="process-step reveal">
           <span>03</span>
-          <h3>Protótipo</h3>
-          <p>Organizamos telas, narrativa, componentes e caminhos principais.</p>
+          <h3>Estrutura</h3>
+          <p>Arquitetura da p&aacute;gina, narrativa, se&ccedil;&otilde;es e pontos de convers&atilde;o.</p>
         </article>
-
-        <article class="process-card reveal">
+        <article class="process-step reveal">
           <span>04</span>
+          <h3>Interface</h3>
+          <p>Telas, estados, responsividade e microintera&ccedil;&otilde;es essenciais.</p>
+        </article>
+        <article class="process-step reveal">
+          <span>05</span>
           <h3>Desenvolvimento</h3>
-          <p>Transformamos a interface em código responsivo, editável e publicado.</p>
+          <p>HTML, CSS e JavaScript limpos, perform&aacute;ticos e f&aacute;ceis de evoluir.</p>
+        </article>
+        <article class="process-step reveal">
+          <span>06</span>
+          <h3>Entrega</h3>
+          <p>Ajustes finos, publica&ccedil;&atilde;o e orienta&ccedil;&atilde;o para os pr&oacute;ximos movimentos.</p>
         </article>
       </div>
     </section>
 
-    <section class="section panel" id="projetos">
+    <section class="section projects-section" id="projetos">
       <div class="section-heading reveal">
-        <p class="eyebrow">Projetos e experimentos</p>
-        <h2>Enquanto o portfólio cresce, a linguagem já aparece.</h2>
-        <p class="section-note">Uma vitrine de direções visuais possíveis: conceito, protótipo e interface experimental.</p>
-      </div>
-
-      <div class="projects-grid horizontal-rail" aria-label="Projetos e experimentos">
-        <article class="project-card project-large reveal">
-          <div class="project-visual visual-one">
-            <span>Brand site</span>
-          </div>
-          <div class="project-info">
-            <p>Conceito</p>
-            <h3>Site editorial para marca contemporânea</h3>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-visual visual-two">
-            <span>Landing</span>
-          </div>
-          <div class="project-info">
-            <p>Experimento</p>
-            <h3>Página comercial com narrativa visual</h3>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-visual visual-three">
-            <span>Web app</span>
-          </div>
-          <div class="project-info">
-            <p>Interface</p>
-            <h3>Dashboard leve para operação criativa</h3>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section future-section panel" id="futuro">
-      <div class="future-card reveal">
-        <p class="eyebrow">Próximo movimento</p>
-
-        <h2>Também olhamos para produtos digitais, dashboards e sistemas conectados.</h2>
-
+        <p class="eyebrow">Projetos</p>
+        <h2>Frentes em desenvolvimento, sem portf&oacute;lio inventado.</h2>
         <p>
-          A Vexon começa pela presença digital de marcas modernas, mas carrega uma visão maior:
-          criar interfaces mais inteligentes, produtos próprios e sistemas conectados a dados.
-          Sempre com a mesma base — clareza visual, experiência e técnica.
+          Enquanto os cases reais crescem, mostramos dire&ccedil;&otilde;es de trabalho que a Vexon est&aacute; preparada para construir.
         </p>
       </div>
+
+      <div class="projects-grid">
+        <article class="project-card project-wide reveal">
+          <div class="project-visual visual-a" aria-hidden="true"></div>
+          <div class="project-copy">
+            <p>Dire&ccedil;&atilde;o em estudo</p>
+            <h3>Landing page para marca premium</h3>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-visual visual-b" aria-hidden="true"></div>
+          <div class="project-copy">
+            <p>Produto digital</p>
+            <h3>Dashboard operacional</h3>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-visual visual-c" aria-hidden="true"></div>
+          <div class="project-copy">
+            <p>Sistema web</p>
+            <h3>Interface para fluxo interno</h3>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-visual visual-d" aria-hidden="true"></div>
+          <div class="project-copy">
+            <p>Institucional</p>
+            <h3>Experi&ecirc;ncia digital de marca</h3>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section class="section contact-section panel" id="contato">
-      <div class="contact-copy reveal">
+    <section class="section closing-section" id="contato">
+      <div class="closing-copy reveal">
         <p class="eyebrow">Contato</p>
-
-        <h2>Tem uma marca moderna e quer criar uma presença digital com mais identidade?</h2>
-
+        <h2>Vamos construir uma presen&ccedil;a digital que n&atilde;o pare&ccedil;a igual a todas as outras.</h2>
         <p>
-          Chama a Vexon. A gente conversa sobre o momento da marca, o tipo de projeto
-          e o melhor caminho para construir algo com presença.
+          Chama a Vexon para conversar sobre o momento da marca, o tipo de projeto e o melhor caminho
+          para criar algo com presen&ccedil;a.
         </p>
       </div>
 
-      <div class="contact-panel reveal">
+      <div class="contact-actions reveal">
         <a
-          class="contact-link"
+          class="contact-card"
           href="https://wa.me/5500000000000?text=Oi%2C%20quero%20conversar%20sobre%20um%20projeto%20com%20a%20Vexon."
           target="_blank"
           rel="noopener noreferrer"
         >
           <span>WhatsApp</span>
-          <strong>Começar conversa</strong>
+          <strong>Chamar no WhatsApp</strong>
         </a>
-
-        <a
-          class="contact-link"
-          href="mailto:contato@vexon.com.br?subject=Projeto%20para%20a%20Vexon"
-        >
-          <span>E-mail</span>
-          <strong>contato@vexon.com.br</strong>
+        <a class="contact-card" href="mailto:contato@vexon.com.br?subject=Briefing%20para%20a%20Vexon">
+          <span>Briefing</span>
+          <strong>Enviar briefing</strong>
         </a>
       </div>
     </section>
-
-    <footer class="site-footer panel">
-      <div>
-        <strong>Vexon</strong>
-        <p>Estúdio colaborativo de design, sites e web apps.</p>
-      </div>
-
-      <a href="#inicio">Voltar ao topo</a>
-    </footer>
   </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Vexon</strong>
+      <p>Tecnologia, visual e experi&ecirc;ncia.</p>
+    </div>
+
+    <nav aria-label="Links do rodap&eacute;">
+      <a href="#criamos">Criamos</a>
+      <a href="#processo">Processo</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <p>Coletivo criativo digital - Brasil</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
